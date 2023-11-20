@@ -9,7 +9,7 @@ function setupRoutes(app) {
     res.send("The server has started");
   });
 
-  router.post("/upload", async (req, res) => {
+  router.post("/api/upload", async (req, res) => {
     try {
       console.log("Received POST request:", req.body); // Log the request body
       const result = await handleUpload(req.body.APIKey);
