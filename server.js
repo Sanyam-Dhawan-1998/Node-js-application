@@ -4,12 +4,12 @@ const { connectToDatabase } = require("./services/db");
 const { setupRoutes } = require("./routes");
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 80;
 
 app.use(bodyParser.json());
 
-// Connect to MongoDB
-// connectToDatabase();
+Connect to MongoDB
+connectToDatabase();
 
 // Pass the 'app' to setupRoutes function
 setupRoutes(app);
