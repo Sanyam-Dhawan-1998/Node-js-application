@@ -27,4 +27,4 @@ jobs:
     - run: npm test
     - run: |
         touch .env
-        echo "${{ secrests.PROD_ENV }}" > .env
+        echo "${{ secrets.PROD_ENV }}" > .env
