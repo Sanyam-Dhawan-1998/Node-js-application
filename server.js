@@ -8,7 +8,7 @@ const port = process.env.PORT || 80;
 
 app.use(bodyParser.json());
 
-Connect to MongoDB
+//Connect to MongoDB
 connectToDatabase();
 
 // Pass the 'app' to setupRoutes function
